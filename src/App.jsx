@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify';
 import Banner from './components/banner/Banner';
 import Footer_card from './components/footer/Footer_card';
 import Footer_Section from './components/footer/Footer_Section';
+import Last_Sc from './components/footer/Last_Sc';
 
 
 
@@ -32,7 +33,7 @@ function App() {
     <>
 
 
-      <Navber isSelected={isSelected}></Navber>
+      <Navber selectedCard={selectedCard} isSelected={isSelected}></Navber>
 
       <Banner></Banner>
 
@@ -58,7 +59,14 @@ function App() {
               ></Playars>
             </Suspense> :
             <Suspense fallback={<Spinner></Spinner>}>
-              <Selected_Players isSelected={isSelected} setIsSelected={setIsSelected} selectedCard={selectedCard} setSelectedCard={setSelectedCard}></Selected_Players>
+              <Selected_Players 
+              setToggle={setToggle}
+              toggle={toggle}
+              isSelected={isSelected} 
+              setIsSelected={setIsSelected} 
+              selectedCard={selectedCard} 
+              setSelectedCard={setSelectedCard}
+              ></Selected_Players>
             </Suspense>
         }
       </div>
@@ -67,6 +75,8 @@ function App() {
         <Footer_card></Footer_card>
 
         <Footer_Section></Footer_Section>
+
+        <Last_Sc></Last_Sc>
 
       <ToastContainer />
 

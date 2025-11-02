@@ -13,7 +13,7 @@ const Selected_card = ({ player, selectedCard, setSelectedCard, isSelected, setI
     }
 
     return (
-        <div className="max-w-[1240px] mx-auto p-3 mt-3 rounded-xl border-2 border-gray-300 flex items-center justify-between">
+        <div className="max-w-[1240px] mx-auto p-3 mt-3 rounded-xl border-2 border-gray-200 flex items-center justify-between">
             <div className="flex gap-3">
                 <img className="w-[76px] h-[66px] rounded-xl object-cover" src={player.img} alt="" />
                 <div>

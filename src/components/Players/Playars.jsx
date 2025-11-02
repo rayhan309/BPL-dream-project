@@ -8,7 +8,7 @@ const Playars = ({ playersDataPromiss, setIsSelected, isSelected, selectedCardHa
 
     return (
         <>
-            <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-2">
+            <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-3">
                 {
                     playersData.map(player => <Player
                         key={player.id}
