@@ -1,16 +1,21 @@
 import userImg from '../../assets/user-name.png'
 import flag from '../../assets/flag.png'
 import { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 
-const Player = ({ player, selectedCardHanler, isSelected, setIsSelected }) => {
+const Player = ({ player, selectedCardHanler, isSelected, setIsSelected, selectedCard }) => {
 
     const [isClick, setIsClick] = useState(false)
 
 
     const btnHandler = (ply) => {
         if (isSelected < ply.price_usd) {
-            alert("hello")
+            toast("❌ Not Availavel Coins!!")
             return;
+        }
+        if (selectedCard.length === 6) {
+            toast("Not a enafe counts!!")
+            return
         }
         setIsClick(true)
         selectedCardHanler(ply)
