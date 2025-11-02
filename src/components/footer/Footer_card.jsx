@@ -9,7 +9,7 @@ const Footer_card = () => {
                     <h2 className="text-xl md:text-2xl font-bold text-center">Subscribe to our Newsletter</h2>
                     <p className='font-medium text-gray-400 text-center mt-3'>Get the latest updates and news right in your inbox!</p>
                     <div className='flex items-center gap-3 mt-4 md:mx-auto w-full md:max-w-[440px]'>
-                        <input type="text" placeholder="Type here" className="input" />
+                        <input type="text" placeholder="Type here" className="input rounded-lg md:rounded-xl" />
                         <button className="btn rounded-lg font-semibold text-black
           bg-gradient-to-r from-pink-300 to-yellow-300 hover:opacity-90">Subscribe</button>
                     </div>
